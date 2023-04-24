@@ -102,14 +102,7 @@ Clone this repository to your desired folder:
 
 https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 
-<!--
-Example commands:
 
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
 
 ### Install
 
