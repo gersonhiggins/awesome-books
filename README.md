@@ -71,7 +71,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-N/A
+[live demo](https://gersonhiggins.github.io/awesome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,6 +206,6 @@ I would like to thank to Microverse
 
 ## 📝 License <a name="license" href="https://choosealicense.com/licenses/mit/">MIT</a>
 
-This project is [MIT](https://github.com/gersonhiggins/Awsome-books/blob/branch/MIT.md) licensed.
+This project is [MIT](https://github.com/gersonhiggins/awesome-books/blob/awesome/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
