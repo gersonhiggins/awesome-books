@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css'>    
     <title>awesomebooks</title>
     <link rel="stylesheet" href="styles.css">
 
 </head>
-<body>
-    <header><h1>Awesome Books</h1></header>
+<body class="" >
+    <header><h1 class="text-center" >All awesome books</h1></header>
     <section class="books">
-        <div class="added-books">
 
+        <div class="added-books border border-5 px-2 mx-auto">
         </div>
-        <form class="add-books" id="form" onsubmit="return false">
-            <label for="name">
-                <input type="text" id="name" name="name" placeholder="name" required>
+
+        <hr class="mx-auto col-4" style="height: 4px;" >
+
+        <form class="add-books text-center pt-3 mx-auto" id="form" onsubmit="return false">
+            <h3>Add a new book</h3>
+            <label for="name" class="col-6" >
+                <input type="text" id="name" class="w-100" name="name" placeholder="Title" required>
             </label>
-            <label>
-                <input type="text" id="author" name="author" placeholder="author" required>
+            <label class="col-6" >
+                <input type="text" class="w-100" id="author" name="author" placeholder="author" required>
             </label>
-            <button class="add">Add</button>
+
+            <div class="col-6">
+                <button class="add">Add</button>
+            </div>
+
         </form>
+
     </section>
     <script src="./scripts/main.js"></script>
 </body>
