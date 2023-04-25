@@ -81,75 +81,60 @@
 
 To get a local copy up and running, follow these steps.
 
-https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
-
 ### Prerequisites
 
-In order to run this project you need:
-
-Clone the repo and open the index.html file located in the root directory
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+In order to run this project you need the following tools:
+- Node.js in your computer
+- IDE(e.g.: Vscode,...)
+- Terminal
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder by running the following commands in your terminal:
 
-https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
-
-
+```sh
+  cd your-prefered-folder-name
+  
+  git clone https://github.com/lerfast/awesome-books.git
+```
 
 ### Install
 
-it does not requiere instalattion.
-
-<!--
-Example command:
+- Install this project with:
 
 ```sh
-  cd my-project
-  gem install
+  cd awesome-books
+
+  npm install or npm i
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-Download or clone the repo and double click on the index.html file 
+```sh
+  Open the live server or Open the index.html file in your browser
 
+```
 
 ### Run tests
 
 To run tests, run the following command:
 
-N/A
-
-<!--
-Example command:
-
 ```sh
-  bin/rails test test/models/article_test.rb
+  npx eslint . 
+  
+  npx stylelint "**/*.{css,scss}" --fix
+
+  ...
+
 ```
---->
 
 ### Deployment
 
 You can deploy this project using:
 
-
-<!--
-Example:
-
-```sh
-
-```
- -->
+ Open the live server or Open the index.html file in your browser
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,6 +145,9 @@ Example:
 👤 **Gerson Higgins**
 
 - GitHub: [@gitgersonhiggins](https://github.com/gersonhiggins)
+
+👤 **Benjamin**
+
 - GitHub: [@gitbenja27](https://github.com/benja27)
 
 
