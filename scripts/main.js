@@ -19,7 +19,7 @@ class Books {
     });
   }
 
-  addBook() {
+  addBook() {    
     const name = this.name.value;
     const author = this.author.value;
     this.booksArr.push({ name, author });
