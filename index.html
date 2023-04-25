@@ -14,56 +14,49 @@
         <nav class="navbar px-3 navbar-expand border border-dark border-2 d-flex justify-content-between">
             
             
-            <h4 " >Awsome books</h4>
+            <h4>Awsome books</h4>
 
             <ul class="nav navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" >List </a>
+                    <a class="nav-link" id="n1" href="#" >List</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Add new</a>
+                    <a class="nav-link" id="n2" href="#">Add new</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Conctact</a>
+                    <a class="nav-link" id="n3" href="#">Conctact</a>
                 </li>
             </ul>
         </nav>
         <div class="localTime text-end pe-4 pt-1" ></div>   
     </header>
-    
-    
-    <section class="books">
+    <section class="books content">
         <h1 class="text-center" >All awesome books</h1>
         <div class="added-books border border-5 px-2 mx-auto">
         </div>
-
         <hr class="mx-auto col-4">
-
-        <form class="add-books text-center pt-3 mx-auto" id="form">
-            <h3>Add a new book</h3>
-            <label for="name" class="col-6" >
-                <input type="text" id="name" class="w-100" name="name" placeholder="Title" required>
-            </label>
-            <label class="col-6" >
-                <input type="text" class="w-100" id="author" name="author" placeholder="author" required>
-            </label>
-
-            <div class="col-6">
-                <button type="submit" class="add">Add</button>
-            </div>
-
-        </form>
-
     </section>
+    <form class="add-books text-center pt-3 mx-auto content hidden" id="form">
+        <h3>Add a new book</h3>
+        <label for="name" class="col-6" >
+            <input type="text" id="name" class="w-100" name="name" placeholder="Title" required>
+        </label>
+        <label class="col-6" >
+            <input type="text" class="w-100" id="author" name="author" placeholder="author" required>
+        </label>
 
+        <div class="col-6">
+            <button type="submit" class="add">Add</button>
+        </div>
 
-    <section class="text-center col-7 mx-auto" >
+    </form>
+    <section class="contact text-center content hidden" >
         <h2 class="text-center" >Contact information</h2>
-
-        
-        <h4 class="text-start" >Do you have any questions or you just want to say "Hello"? </h4>
-        <h4 class="text-start" >You can reach out to us! </h4>
-        <ul class="text-start ">
+        <div class="info">
+            <h4>Do you have any questions or you just want to say "Hello"? </h4>
+            <h4>You can reach out to us! </h4>
+         </div>
+        <ul class="text-start">
             <li>
                 <h4> Our e-email rksnek@gmail.com and gahg.10gerson@gmail.com</h4>
             </li>
@@ -76,9 +69,7 @@
         </ul>
 
     </section>
-
-
-    <footer class="border border-dark border-2 mx-1 px-2">
+    <footer>
         <h3>Copyright Todos los derechos reservados</h3>
     </footer>
     <script src="./scripts/main.js"></script>
