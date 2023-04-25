@@ -90,14 +90,13 @@ if (localStorage.getItem('books')) {
 }
 
 const navLink = Array.from(document.querySelectorAll('.nav-link'));
-navLink.forEach(n => n.addEventListener('click', () => {
+navLink.forEach((n) => n.addEventListener('click', () => {
   const navContent = Array.from(document.querySelectorAll('.content'));
-  navContent.forEach(e => {
-    if(navLink.indexOf(n) === navContent.indexOf(e)){
+  navContent.forEach((e) => {
+    if (navLink.indexOf(n) === navContent.indexOf(e)) {
       e.classList.remove('hidden');
-    }
-    else if(navLink.indexOf(n) !== navContent.indexOf(e)){
+    } else if (navLink.indexOf(n) !== navContent.indexOf(e)) {
       e.classList.add('hidden');
     }
-  })
+  });
 }));

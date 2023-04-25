@@ -48,24 +48,28 @@ form {
   background-color: gray;
   margin: 10px 0;
 }
+
 .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .info {
-    text-align: start;
-    padding: 0px 50px;
+  text-align: start;
+  padding: 0 50px;
 }
+
 .hidden {
-    display: none;
+  display: none;
 }
+
 footer {
-    margin: 1%;
-    border: 2px solid #000;
-    width: 98%;
-    padding: 5px;
-    position: absolute;
-    bottom: 0;
+  margin: 1%;
+  border: 2px solid #000;
+  width: 98%;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
 }
