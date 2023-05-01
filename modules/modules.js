@@ -1,4 +1,4 @@
-class Books {
+export default class Books {
   constructor() {
     this.booksArr = [];
     this.name = document.getElementById('name');
@@ -82,21 +82,3 @@ class Books {
     this.displayBooks();
   }
 }
-const library = new Books();
-
-if (localStorage.getItem('books')) {
-  library.booksArr = JSON.parse(localStorage.getItem('books'));
-  library.displayBooks();
-}
-
-const navLink = Array.from(document.querySelectorAll('.nav-link'));
-navLink.forEach((n) => n.addEventListener('click', () => {
-  const navContent = Array.from(document.querySelectorAll('.content'));
-  navContent.forEach((e) => {
-    if (navLink.indexOf(n) === navContent.indexOf(e)) {
-      e.classList.remove('hidden');
-    } else if (navLink.indexOf(n) !== navContent.indexOf(e)) {
-      e.classList.add('hidden');
-    }
-  });
-}));
