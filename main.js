@@ -1,6 +1,6 @@
 import Books from './modules/modules.js';
 import navLink from './modules/nav.js';
-import { DateTime } from './node_modules/luxon/src/luxon.js';
+import { DateTime } from './luxon/src/luxon.js';
 
 const timeContainer = document.querySelector('.localTime');
 const timeInterval = setInterval(() => {
