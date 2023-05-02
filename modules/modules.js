@@ -5,8 +5,6 @@ export default class Books {
     this.author = document.getElementById('author');
     this.add = document.getElementById('form');
     this.container = document.querySelector('.added-books');
-    this.timeContainer = document.querySelector('.localTime');
-    this.updateTime = document.addEventListener('DOMContentLoaded', this.updateTime.bind(this));
     this.displayBooks();
     this.add.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -19,27 +17,6 @@ export default class Books {
         this.removeBook(index);
       }
     });
-  }
-
-  updateTime() {
-    setInterval(() => {
-      const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-      const suffixes = ['st', 'nd', 'rd', 'th', 'th', 'th', 'th', 'th', 'th', 'th', 'th', 'th', 'th', 'th', 'th', 'th', 'th', 'th', 'th', 'th', 'st', 'nd', 'rd', 'th', 'th', 'th', 'th', 'th', 'th', 'th', 'st'];
-
-      const date = new Date();
-      const month = months[date.getMonth()];
-      const day = date.getDate();
-      const suffix = suffixes[day - 1];
-      const year = date.getFullYear();
-      const hour = date.getHours() % 12 || 12;
-      const minute = date.getMinutes();
-      const second = date.getSeconds();
-      const ampm = date.getHours() >= 12 ? 'pm' : 'am';
-
-      const formattedDate = `${month} ${day}${suffix} ${year}, ${hour}:${minute}:${second} ${ampm}`;
-
-      this.timeContainer.innerHTML = formattedDate;
-    }, 1000);
   }
 
   addBook() {

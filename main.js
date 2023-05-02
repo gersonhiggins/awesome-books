@@ -1,5 +1,13 @@
 import Books from './modules/modules.js';
 import navLink from './modules/nav.js';
+import { DateTime } from './node_modules/luxon/src/luxon.js';
+let timeContainer = document.querySelector('.localTime');
+const timeInterval = setInterval(() => {
+  timeContainer.textContent = `${DateTime.now().toHTTP()}`
+  return timeContainer
+}, 1000);
+
+console.log(DateTime.now())
 
 const library = new Books();
 
